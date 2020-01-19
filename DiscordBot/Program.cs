@@ -73,7 +73,7 @@ namespace DiscordBot {
 			async Task TumbUp (MessageReactionAddEventArgs context) {
 
 				if (context.Emoji.Name == "👍") {
-					await context.Message.RespondAsync (context.User.Username + " like it!");
+					await context.Message.RespondAsync (context.User.Username + " likes it!");
 				}
 			}
 
@@ -91,7 +91,7 @@ namespace DiscordBot {
 
 			async Task Permission (MessageReactionAddEventArgs context) {
 
-				if (context.Emoji.Name == "🔫") {
+				if (context.Emoji.Name == ":gun:") {
 					await context.Message.RespondAsync (context.Message.Author.Username + " расстрелян");
 				}
 			}
